@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\ronal\\Documents\\Unreal Projects\\Galaga_USFX_L001\\Source\\Galaga_USFX_L001\\Galaga_USFX_L001.Build.cs",
+		"C:\\Users\\ronal\\Documents\\Unreal Projects\\Galaga_USFX_L001\\Source\\Galaga_USFX_L001.Target.cs",
+		"C:\\Users\\ronal\\Documents\\Unreal Projects\\Galaga_USFX_L001\\Source\\Galaga_USFX_L001Editor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}

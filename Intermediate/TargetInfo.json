@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Galaga_USFX_L001",
+			"Path": "C:\\Users\\ronal\\Documents\\Unreal Projects\\Galaga_USFX_L001\\Source\\Galaga_USFX_L001.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Galaga_USFX_L001Editor",
+			"Path": "C:\\Users\\ronal\\Documents\\Unreal Projects\\Galaga_USFX_L001\\Source\\Galaga_USFX_L001Editor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

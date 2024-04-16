@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Galaga_USFX_L001.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{C816D655-F217-46FF-8407-C3EB89C791FE}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Galaga_USFX_L001.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\Galaga_USFX_L001Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{DED726AD-535A-46A1-AEF0-478EFBBAF5B9}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Galaga_USFX_L001">
+      <UniqueIdentifier>{0D661A4E-518F-4CFA-B1E0-6B8341B1CD77}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Galaga_USFX_L001\Galaga_USFX_L001.Build.cs">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Galaga_USFX_L001\Galaga_USFX_L001.cpp">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_L001\Galaga_USFX_L001.h">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_L001\Galaga_USFX_L001GameMode.cpp">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_L001\Galaga_USFX_L001GameMode.h">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_L001\Galaga_USFX_L001Pawn.cpp">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_L001\Galaga_USFX_L001Pawn.h">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_L001\Galaga_USFX_L001Projectile.cpp">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_L001\Galaga_USFX_L001Projectile.h">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_L001\NaveAyuda.cpp">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_L001\NaveAyuda.h">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_L001\NaveCambita.cpp">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_L001\NaveCambita.h">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_L001\NaveEnemiga.cpp">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_L001\NaveEnemiga.h">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_L001\NaveEnemigaCaza.cpp">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_L001\NaveEnemigaCaza.h">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_L001\NaveEnemigaTransporte.cpp">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_L001\NaveEnemigaTransporte.h">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

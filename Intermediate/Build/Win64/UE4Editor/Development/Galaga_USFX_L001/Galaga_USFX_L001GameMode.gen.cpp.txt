@@ -1,0 +1,9 @@
+C:\Users\ronal\Documents\Unreal Projects\Galaga_USFX_L001\Intermediate\Build\Win64\UE4Editor\Development\Galaga_USFX_L001\Definitions.Galaga_USFX_L001.h
+D:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Users\ronal\Documents\Unreal Projects\Galaga_USFX_L001\Source\Galaga_USFX_L001/Galaga_USFX_L001GameMode.h
+D:\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+D:\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+D:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+D:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+C:\Users\ronal\Documents\Unreal Projects\Galaga_USFX_L001\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L001\Galaga_USFX_L001GameMode.generated.h
