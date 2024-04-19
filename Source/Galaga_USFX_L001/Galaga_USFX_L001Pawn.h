@@ -41,10 +41,15 @@ public:
 	/** Sound to play each time we fire */
 	UPROPERTY(Category = Audio, EditAnywhere, BlueprintReadWrite)
 	class USoundBase* FireSound;
-
+protected:
+	FTimerHandle TimerHandle_CrearBarrera;
+	FTimerHandle BarreraTimerHandle;
+	FTimerHandle DestruirBarrera;
 	// Begin Actor Interface
 	virtual void Tick(float DeltaSeconds) override;
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
+	virtual void CrearBarrera();
+	virtual void ResetCrearBarrera();
 	// End Actor Interface
 
 	/* Fire a shot in the specified direction */
@@ -66,6 +71,7 @@ private:
 
 	/** Handle for efficient management of ShotTimerExpired timer */
 	FTimerHandle TimerHandle_ShotTimerExpired;
+	bool bCrearBarr;
 
 public:
 	/** Returns ShipMeshComponent subobject **/

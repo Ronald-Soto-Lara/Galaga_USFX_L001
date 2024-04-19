@@ -23,10 +23,6 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void Tick(float DeltaSeconds) override;
-	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
-	FTimerHandle TimerHandle_Movimiento;
-
-
 	virtual void movMIzq(float Value);
 	virtual void movMDer(float Value);
 	virtual void movMArriba(float Value);

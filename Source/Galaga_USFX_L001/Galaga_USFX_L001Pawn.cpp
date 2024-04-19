@@ -12,6 +12,8 @@
 #include "Engine/StaticMesh.h"
 #include "Kismet/GameplayStatics.h"
 #include "Sound/SoundBase.h"
+#include "EscudoActor.h"
+#include "GameFramework/PlayerInput.h"
 
 const FName AGalaga_USFX_L001Pawn::MoveForwardBinding("MoveForward");
 const FName AGalaga_USFX_L001Pawn::MoveRightBinding("MoveRight");
@@ -48,21 +50,26 @@ AGalaga_USFX_L001Pawn::AGalaga_USFX_L001Pawn()
 	MoveSpeed = 1000.0f;
 	// Weapon
 	GunOffset = FVector(90.f, 0.f, 0.f);
-	FireRate = 0.1f;
+	FireRate = 0.1f;	
 	bCanFire = true;
 }
-
 void AGalaga_USFX_L001Pawn::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
 {
 	check(PlayerInputComponent);
-
+	Super::SetupPlayerInputComponent(PlayerInputComponent);
 	// set up gameplay key bindings
 	PlayerInputComponent->BindAxis(MoveForwardBinding);
 	PlayerInputComponent->BindAxis(MoveRightBinding);
+
+
+	FInputActionKeyMapping CrearBarreraKey("CrearBarrera", EKeys::K, 0, 0, 0, 0);
+
 	PlayerInputComponent->BindAxis(FireForwardBinding);
 	PlayerInputComponent->BindAxis(FireRightBinding);
-}
 
+	UPlayerInput::AddEngineDefinedActionMapping(CrearBarreraKey);
+	PlayerInputComponent->BindAction("CrearBarrera", IE_Pressed, this, &AGalaga_USFX_L001Pawn::CrearBarrera);
+}
 void AGalaga_USFX_L001Pawn::Tick(float DeltaSeconds)
 {
 	// Find movement direction
@@ -135,4 +142,59 @@ void AGalaga_USFX_L001Pawn::FireShot(FVector FireDirection)
 void AGalaga_USFX_L001Pawn::ShotTimerExpired()
 {
 	bCanFire = true;
+}
+void AGalaga_USFX_L001Pawn::CrearBarrera()
+{
+	if (!bCrearBarr)
+	{
+		return;
+	}
+	FVector Location = GetActorLocation() + FVector(100.0f, 0.0f, 0.0f);
+	FRotator Rotation = GetActorRotation();
+	AEscudoActor* CrearBarreraActor = GetWorld()->SpawnActor<AEscudoActor>(AEscudoActor::StaticClass(), Location, Rotation);
+	AEscudoActor* CrearBarreraActor1 = GetWorld()->SpawnActor<AEscudoActor>(AEscudoActor::StaticClass(), Location, Rotation);
+	AEscudoActor* CrearBarreraActor2 = GetWorld()->SpawnActor<AEscudoActor>(AEscudoActor::StaticClass(), Location, Rotation);
+	AEscudoActor* CrearBarreraActor3 = GetWorld()->SpawnActor<AEscudoActor>(AEscudoActor::StaticClass(), Location, Rotation);
+	if (CrearBarreraActor != nullptr)
+	{
+		CrearBarreraActor->SetActorLocation(Location);
+		CrearBarreraActor->SetActorRotation(Rotation);
+		CrearBarreraActor1->SetActorLocation(Location + FVector(-100.0f, 100.0f, 0.0f));
+		CrearBarreraActor1->SetActorRotation(Rotation + FRotator(0.0f, 90.0f, 0.0f));
+		CrearBarreraActor2->SetActorLocation(Location + FVector(-100.0f, -100.0f, 0.0f));
+		CrearBarreraActor2->SetActorRotation(Rotation + FRotator(0.0f, -90.0f, 0.0f));
+		CrearBarreraActor3->SetActorLocation(Location + FVector(-200.0f, 0.0f, 0.0f));
+		CrearBarreraActor3->SetActorRotation(Rotation);
+
+		// Crear un delegado de temporizador
+		FTimerDelegate TimerDel;
+		TimerDel.BindLambda([CrearBarreraActor, CrearBarreraActor1, CrearBarreraActor2, CrearBarreraActor3]()
+			{
+				if (CrearBarreraActor && CrearBarreraActor->IsValidLowLevel())
+				{
+					CrearBarreraActor->Destroy();
+				}
+				if (CrearBarreraActor1 && CrearBarreraActor1->IsValidLowLevel())
+				{
+					CrearBarreraActor1->Destroy();
+				}
+				if (CrearBarreraActor2 && CrearBarreraActor2->IsValidLowLevel())
+				{
+					CrearBarreraActor2->Destroy();
+				}
+				if (CrearBarreraActor3 && CrearBarreraActor3->IsValidLowLevel())
+				{
+					CrearBarreraActor3->Destroy();
+				}
+			});
+
+		// Destruccion del actor despues de 5 segundos de aparecer
+		GetWorld()->GetTimerManager().SetTimer(DestruirBarrera, TimerDel, 5.0f, false);
+	}
+	bCrearBarr = false;
+	GetWorld()->GetTimerManager().SetTimer(TimerHandle_CrearBarrera, this, &AGalaga_USFX_L001Pawn::ResetCrearBarrera, 10.0f, false);
+}
+void AGalaga_USFX_L001Pawn::ResetCrearBarrera()
+{
+	bCrearBarr = true;
 }

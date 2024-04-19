@@ -21,31 +21,6 @@ ANaveCambita::ANaveCambita()
 	MallaNaveCambita->SetStaticMesh(ShipMesh.Object);
 
 }
-void ANaveCambita::SetupInputComponent(UInputComponent* PlayerInputComponent)
-{
-	check(PlayerInputComponent);
-	Super::SetupInputComponent(PlayerInputComponent);
-
-	// Asociar acciones de entrada con funciones en el actor
-
-	FInputAxisKeyMapping movMIzqKey("MovIzq", EKeys::A, 1.0f);
-	FInputAxisKeyMapping movMDerKey("MovDer", EKeys::D, 1.0f);
-	FInputAxisKeyMapping movMArribaKey("MovArr", EKeys::W, 1.0f);
-	FInputAxisKeyMapping movMAbajoKey("MovAba", EKeys::S, 1.0f);
-
-	PlayerInputComponent->BindAxis(FireForwardBinding);
-	PlayerInputComponent->BindAxis(FireRightBinding);
-
-	GetWorld()->GetFirstPlayerController()->PlayerInput->AddAxisMapping(movMIzqKey);
-	PlayerInputComponent->BindAxis("MovIzq", this, &ANaveCambita::movMIzq);
-	GetWorld()->GetFirstPlayerController()->PlayerInput->AddAxisMapping(movMDerKey);
-	PlayerInputComponent->BindAxis("MovDer", this, &ANaveCambita::movMDer);
-	GetWorld()->GetFirstPlayerController()->PlayerInput->AddAxisMapping(movMArribaKey);
-	PlayerInputComponent->BindAxis("MovArr", this, &ANaveCambita::movMArriba);
-	GetWorld()->GetFirstPlayerController()->PlayerInput->AddAxisMapping(movMAbajoKey);
-	PlayerInputComponent->BindAxis("MovAba", this, &ANaveCambita::movMAbajo);
-}
-
 // Called when the game starts or when spawned
 void ANaveCambita::BeginPlay()
 {

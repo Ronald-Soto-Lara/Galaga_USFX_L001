@@ -1,0 +1,25 @@
+C:\Users\ronal\Documents\Unreal Projects\Galaga_USFX_L001\Intermediate\Build\Win64\UE4Editor\Development\Galaga_USFX_L001\Definitions.Galaga_USFX_L001.h
+C:\Users\ronal\Documents\Unreal Projects\Galaga_USFX_L001\Source\Galaga_USFX_L001\Galaga_USFX_L001GameMode.h
+D:\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+D:\UE_4.27\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+D:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+D:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+C:\Users\ronal\Documents\Unreal Projects\Galaga_USFX_L001\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L001\Galaga_USFX_L001GameMode.generated.h
+C:\Users\ronal\Documents\Unreal Projects\Galaga_USFX_L001\Source\Galaga_USFX_L001\Galaga_USFX_L001Pawn.h
+D:\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+D:\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
+D:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
+D:\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+D:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+D:\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+C:\Users\ronal\Documents\Unreal Projects\Galaga_USFX_L001\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L001\Galaga_USFX_L001Pawn.generated.h
+C:\Users\ronal\Documents\Unreal Projects\Galaga_USFX_L001\Source\Galaga_USFX_L001\NaveEnemiga.h
+C:\Users\ronal\Documents\Unreal Projects\Galaga_USFX_L001\Source\Galaga_USFX_L001\NaveAyuda.h
+C:\Users\ronal\Documents\Unreal Projects\Galaga_USFX_L001\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L001\NaveAyuda.generated.h
+C:\Users\ronal\Documents\Unreal Projects\Galaga_USFX_L001\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L001\NaveEnemiga.generated.h
+C:\Users\ronal\Documents\Unreal Projects\Galaga_USFX_L001\Source\Galaga_USFX_L001\NaveEnemigaTransporte.h
+C:\Users\ronal\Documents\Unreal Projects\Galaga_USFX_L001\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L001\NaveEnemigaTransporte.generated.h
+C:\Users\ronal\Documents\Unreal Projects\Galaga_USFX_L001\Source\Galaga_USFX_L001\NaveEnemigaCaza.h
+C:\Users\ronal\Documents\Unreal Projects\Galaga_USFX_L001\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L001\NaveEnemigaCaza.generated.h
+C:\Users\ronal\Documents\Unreal Projects\Galaga_USFX_L001\Source\Galaga_USFX_L001\NaveCambita.h
+C:\Users\ronal\Documents\Unreal Projects\Galaga_USFX_L001\Intermediate\Build\Win64\UE4Editor\Inc\Galaga_USFX_L001\NaveCambita.generated.h

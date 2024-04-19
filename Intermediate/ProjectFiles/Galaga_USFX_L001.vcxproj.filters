@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Galaga_USFX_L001.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{C816D655-F217-46FF-8407-C3EB89C791FE}</UniqueIdentifier>
+      <UniqueIdentifier>{CBDB68CD-25AC-4C82-ACCA-6104B3DFB2CA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Galaga_USFX_L001.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,11 @@
     <None Include="..\..\Source\Galaga_USFX_L001Editor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
+    <None Include="..\..\Examen_Parcial_LAB01.zip" />
     <Filter Include="Config">
-      <UniqueIdentifier>{DED726AD-535A-46A1-AEF0-478EFBBAF5B9}</UniqueIdentifier>
+      <UniqueIdentifier>{597C400B-1D30-41A3-8F17-A0F4A2BA512B}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,8 +33,20 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Galaga_USFX_L001">
-      <UniqueIdentifier>{0D661A4E-518F-4CFA-B1E0-6B8341B1CD77}</UniqueIdentifier>
+      <UniqueIdentifier>{C3C111BF-BFD9-42D8-B2DA-DD28C95884E8}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Galaga_USFX_L001\EscudoActor.cpp">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_L001\EscudoActor.h">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Galaga_USFX_L001\EscudoEscena.cpp">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Galaga_USFX_L001\EscudoEscena.h">
+      <Filter>Source\Galaga_USFX_L001</Filter>
+    </ClInclude>
     <None Include="..\..\Source\Galaga_USFX_L001\Galaga_USFX_L001.Build.cs">
       <Filter>Source\Galaga_USFX_L001</Filter>
     </None>
